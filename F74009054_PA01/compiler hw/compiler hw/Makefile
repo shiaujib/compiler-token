@@ -1,0 +1,27 @@
+hdir=/home
+
+compilerhw: compilerhw.o
+	g++ -o compilerhw compilerhw.o
+parser: parser.o
+	g++ -o parser parser.o
+
+result: result.o 
+	g++ -o result result.o
+error.o:global.h
+	g++ -I$(hdir) global.h -c error.cpp
+
+symbol.o:error.o symbol.cpp
+	g++ -c  symbol.cpp
+init.o:symbol.o init.cpp
+	g++ -c init.cpp
+lexer.o:init.o lexer.cpp
+	g++ -c lexer.cpp
+result.o:lexer.o result.cpp
+	g++ -c result.cpp
+generator.o: generator.o generator.cpp
+	g++ -c generator.cpp
+
+
+clean:
+	rm symbol.o init.o error.o result.o lexer.o generator.o parser.o compilerhw.o
+

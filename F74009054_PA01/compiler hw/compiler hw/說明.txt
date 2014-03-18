@@ -1,0 +1,73 @@
+內容 :
+	global.h
+		->主要資料結構定義
+		
+		lexmem[].itNum
+			->單行單元數
+		lexmem[].array[].lexptr
+			->字串單元
+		lexmem[].array[].token
+			->字串類別
+		lexmem[].array[].scope
+			->單行之可視度
+		
+	error.cpp(不重要)
+		->作業一符號表加減用
+	symbol.cpp(不重要)
+		->
+	init.cpp
+		->資料結構初始敘述可放在這
+	lexer.cpp
+		->分析輸入資料至lexmem[] ,由result.cpp 使用
+	result.cpp
+		->輸出詞彙分析結果到Result.txt
+	generator.cpp
+		->作業二分析CFG紀錄至CFG[].LHS 
+					CFG[].RHS
+					CFG[i].rNum
+					
+					
+	parser.cpp
+		->將lexeme記錄到的單元若為
+		Identifier ->單元是名稱
+		Char	->單元是字元
+		String	->單元是字串
+		Int	->單元是整數值
+		Float	->單元是浮點數值
+		則改以token類字串記錄在tmp[].lexptr而並未紀錄對應之值但這次作業可能需要
+		,其餘基本上皆為特殊符號和關鍵字(包含type宣告)
+	Makefile
+		->make -f Makefile
+	Result.txt
+		->作業一結果
+	TestFile1.java
+		->輸入資料
+	output1.txt
+	output2.txt
+	output3.txt
+		->作業二輸出 ,可在global.h更名 ,區別作業三輸出
+		
+	
+執行 :
+	makefile 編譯好後 以parser為執行檔
+	
+想法 :
+
+<另外寫一組新程式,分析的參考記錄可用作業一的lexeme>
+	Output1的工作是把作業一分析出來的單元
+		再做一次分析
+			輸出序即依照流程順序
+			格式為
+			->id lexeme type(Keyword)
+			必須找出規則再針對格式作排列
+		語意規則
+			->對於production rule的語意上的紀錄規則
+			即動作和元素的紀錄格式
+			
+	Output2 :把四欄位資料結構之紀錄輸出
+		順序即依照流程順序
+		先把運算子拆成獨立表達式與指派表達式
+		將每組表達式分別以ASM格式紀錄
+		必須找規則分析出各運算子 和 運算元(identifier /數值)並記錄。
+		
+	Output3 :把各動作表達式依格式替換成機器指令輸出

@@ -1,0 +1,16 @@
+
+
+
+=         2                reg0
+=      reg1                reg1
+=      reg2                reg2
+=      reg3                reg3
+=      reg3                   b
+=         4                reg4
+=         5                reg6
++      reg4      reg6      reg6
+=         3                reg7
+=         6                reg9
+=         b               reg11
+*      reg9     reg11     reg11
++      reg7     reg11     reg11

@@ -1,0 +1,121 @@
+Line :1		  ;  
+		0: ;
+Line :2		  public    class    Test.File.v1    {  
+		0: <Keyword> :	   public
+		0: <Keyword> :	   class
+		0: <Identifier> :	   Test.File.v1
+		1: <SpecialSymbol> :	   {
+Line :3		
+Line :4		  /*F749  
+		1: <Comment> :	   /*F749
+Line :5		  		99047 forDEMO1*/  
+		1: <Comment> :	   		99047 forDEMO1*/
+Line :6		
+Line :7		  public    static    void    main_func    (    String    [    ]    args    )  
+		1: <Keyword> :	   public
+		1: <Keyword> :	   static
+		1: <Keyword> :	   void
+		1: <Identifier> :	   main_func
+		1: <SpecialSymbol> :	   (
+		1: <Keyword> :	   String
+		1: <SpecialSymbol> :	   [
+		1: <SpecialSymbol> :	   ]
+		1: <Identifier> :	   args
+		1: <SpecialSymbol> :	   )
+Line :8		  {  
+		2: <SpecialSymbol> :	   {
+Line :9		  //asefafaf  
+		2: <Comment> :	   //asefafaf
+Line :10		  int    a1    =    1.0e-2    ;  
+		2: <Keyword> :	   int
+		2: <Identifier> :	   a1
+		2: <Operator> :	   =
+		2: <Float> :	   1.0e-2
+		2: <SpecialSymbol> :	   ;
+Line :11		  int    a2    =    -5.5    ;  
+		2: <Keyword> :	   int
+		2: <Identifier> :	   a2
+		2: <Operator> :	   =
+		2: <Float> :	   -5.5
+		2: <SpecialSymbol> :	   ;
+Line :12		  int    dd    ;  
+		2: <Keyword> :	   int
+		2: <Identifier> :	   dd
+		2: <SpecialSymbol> :	   ;
+Line :13		  char    b    =    ' '    ;  
+		2: <Keyword> :	   char
+		2: <Identifier> :	   b
+		2: <Operator> :	   =
+		2: <Char> :	   ' '
+		2: <SpecialSymbol> :	   ;
+Line :14		  String    s    =    "1s5d  6 g8h "    ;  
+		2: <Keyword> :	   String
+		2: <Identifier> :	   s
+		2: <Operator> :	   =
+		2: <String> :	    "1s5d  6 g8h "
+		2: <SpecialSymbol> :	   ;
+Line :15		  float    f    =    12.0097    ;  
+		2: <Keyword> :	   float
+		2: <Identifier> :	   f
+		2: <Operator> :	   =
+		2: <Float> :	   12.0097
+		2: <SpecialSymbol> :	   ;
+Line :16		  double    ab.d12e3.c    =    a1    +    a2    ;  
+		2: <Keyword> :	   double
+		2: <Identifier> :	   ab.d12e3.c
+		2: <Operator> :	   =
+		2: <Identifier> :	   a1
+		2: <Operator> :	   +
+		2: <Identifier> :	   a2
+		2: <SpecialSymbol> :	   ;
+Line :17		
+Line :18		  //++ i ;  
+		2: <Comment> :	   //++ i ;
+Line :19		  //i ++ ;  
+		2: <Comment> :	   //i ++ ;
+Line :20		  while    (    Exp    )    {  
+		2: <Keyword> :	   while
+		2: <SpecialSymbol> :	   (
+		2: <Identifier> :	   Exp
+		2: <SpecialSymbol> :	   )
+		3: <SpecialSymbol> :	   {
+Line :21		
+Line :22		
+Line :23		  }  
+		3: <SpecialSymbol> :	   }
+Line :24		
+Line :25		  if    (    Exp1    )    {  
+		2: <Keyword> :	   if
+		2: <SpecialSymbol> :	   (
+		2: <Identifier> :	   Exp1
+		2: <SpecialSymbol> :	   )
+		3: <SpecialSymbol> :	   {
+Line :26		
+Line :27		
+Line :28		  }  
+		3: <SpecialSymbol> :	   }
+Line :29		  else    {  
+		2: <Keyword> :	   else
+		3: <SpecialSymbol> :	   {
+Line :30		
+Line :31		
+Line :32		  }  
+		3: <SpecialSymbol> :	   }
+Line :33		  /*	int $a1 = 1.0e-2 ;  
+		2: <Comment> :	   /*	int $a1 = 1.0e-2 ;
+Line :34		  		int a2 = -5.5 ;  
+		2: <Comment> :	   		int a2 = -5.5 ;
+Line :35		  		int 3D ;   
+		2: <Comment> :	   		int 3D ; 
+Line :36		  		char b = ' ' ;*/  
+		2: <Comment> :	   		char b = ' ' ;*/
+Line :37		
+Line :38		
+Line :39		
+Line :40		  }  
+		2: <SpecialSymbol> :	   }
+Line :41		
+Line :42		  }  
+		1: <SpecialSymbol> :	   }
+Line :43		  //end  
+		0: <Comment> :	   //end
